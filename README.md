@@ -1,4 +1,4 @@
 Mail-AI-CUP
 ===========
 
-MyStrategy in AI CUP
+MyStrategy class in AI CUP

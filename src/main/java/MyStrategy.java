@@ -89,7 +89,7 @@ public final class MyStrategy implements Strategy {
             double angle_to_enemy = self.getTurretAngleTo(tank); 
             double shift = 0;
             
-            if (self.getDistanceTo(tank) > CLOSE_DISTANCE) {
+            /*if (self.getDistanceTo(tank) > CLOSE_DISTANCE) { //some failed magic
             	double d = 0;
             	double x1, y1, x2, y2, x, y;
             	x1 = self.getX();	y1 = self.getY();
@@ -97,7 +97,7 @@ public final class MyStrategy implements Strategy {
             	x = tank.getX() + tank.getSpeedX();	y = tank.getY() + tank.getSpeedY();
             	d = Math.abs(((y2 - y1)*x + (x1 - x2)*y + y1*x2 - y2*x1))/Math.sqrt((y2 - y1)*(y2 - y1) + (x1 - x2)*(x1 - x2));
             	shift = self.getDistanceTo(tank)/SPEED*Math.atan(d/self.getDistanceTo(tank));
-            }
+            }*/
             
             if (angle_to_enemy - shift > MIN_SHOT_ANGLE) {         
                 move.setTurretTurn(1.0);
